@@ -20,6 +20,23 @@ In this week, your team builds two GitHub Actions workflows: a CI pipeline that 
 - GitHub repository with Write access for all team members
 - Access to GitHub Container Registry (ghcr.io) through your GitHub account
 
+## Pulling This Week's Starter Content Into Your Team Repo
+
+This repo (`inet4031-week06`) is instructor-provided starter/reference content for
+Week 6, not something you clone standalone. Pull the pieces you need into your
+team's single repo:
+
+```bash
+git remote add week6 https://github.com/INET4031-Labs/inet4031-week06.git
+git fetch week6
+git checkout week6/main -- .github/workflows docs
+git remote remove week6
+```
+
+Do this before you start editing `.github/workflows/` locally, or your local changes
+will be silently overwritten by the checkout. Note: this week does not yet ship a
+`scripts/check-week6.sh` -- none exists to pull.
+
 ## Architecture Assumption
 
 This week uses GitHub Actions, which runs on GitHub's infrastructure outside your team container. The scheduling uses GitHub Actions cron syntax, not systemd timers inside the container. This is intentional: systemd timer behavior inside nested Docker containers is unreliable. GitHub Actions ensures the workflow runs on a predictable schedule regardless of your container state.

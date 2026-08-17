@@ -1,0 +1,16 @@
+# Kubeconfig / cluster access
+kubeconfig
+*.kubeconfig
+.kube/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log

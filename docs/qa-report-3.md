@@ -286,7 +286,7 @@ Record any observations about Week 6 that would help future sprints:
 
 ## Reference: Acceptance Criteria Mapping
 
-This QA report cross-references the acceptance criteria defined in `docs/acceptance-criteria.md`:
+This QA report cross-references the acceptance criteria defined in `docs/week-06-acceptance-criteria.md`:
 
 | Acceptance Criterion | Check Status | QA Verification | Notes |
 |---|---|---|---|
